@@ -13,6 +13,19 @@
             background-color: #f7f7f7;
             color: #333;
         }
+        body {
+    /* Existing styles... */
+    animation: colorChange 10s infinite alternate;
+}
+
+@keyframes colorChange {
+    from {
+        background-color: #f7f7f7;
+    }
+    to {
+        background-color: #ffcc00;
+    }
+}
 
         header {
             background-color: #1e4677;
@@ -100,50 +113,97 @@
         <h2>Welcome to RiddhiSiddhi Real Estate</h2>
         <p>Discover your dream home with us!</p>
         <div class="property-listing">
-            <img class="property-image" src="https://via.placeholder.com/800x200" alt="Property 1">
-            <h3>Property Listing 1</h3>
-            <p>Address: 123 Main St</p>
-            <p>Price: $300,000</p>
-            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p>Broker: Ram Kumar Sahu</p>
+            <div class="front">
+                <video class="property-video" controls>
+                    <source src="property1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3>Property Listing 1</h3>
+                <!-- Add other front face content as needed -->
+            </div>
+            <div class="back">
+                <p>Additional details or features go here.</p>
+                <!-- Add other back face content as needed -->
+            </div>
         </div>
+        
+        
+        <div class="property-listing">
+            <div class="front">
+                <video class="property-video" controls>
+                    <source src="property2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3>Property Listing 1</h3>
+                <!-- Add other front face content as needed -->
+            </div>
+            <div class="back">
+                <p>Additional details or features go here.</p>
+                <!-- Add other back face content as needed -->
+            </div>
+        </div>
+        
+        <div class="property-listing">
+            <div class="front">
+                <video class="property-video" controls>
+                    <source src="property3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3>Property Listing 1</h3>
+                <!-- Add other front face content as needed -->
+            </div>
+            <div class="back">
+                <p>Additional details or features go here.</p>
+                <!-- Add other back face content as needed -->
+            </div>
+        </div>
+        
+        <div class="property-listing">
+            <div class="front">
+                <video class="property-video" controls>
+                    <source src="property4.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3>Property Listing 1</h3>
+                <!-- Add other front face content as needed -->
+            </div>
+            <div class="back">
+                <p>Additional details or features go here.</p>
+                <!-- Add other back face content as needed -->
+            </div>
+        </div>
+        
+        <div class="property-listing">
+            <div class="front">
+                <video class="property-video" controls>
+                    <source src="property5.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3>Property Listing 1</h3>
+                <!-- Add other front face content as needed -->
+            </div>
+            <div class="back">
+                <p>Additional details or features go here.</p>
+                <!-- Add other back face content as needed -->
+            </div>
+        </div>
+        
 
         <div class="property-listing">
-            <img class="property-image" src="https://via.placeholder.com/800x200" alt="Property 2">
-            <h3>Property Listing 2</h3>
-            <p>Address: 456 Oak Ave</p>
-            <p>Price: $500,000</p>
-            <p>Description: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <p>Broker: Ram Kumar Sahu</p>
+            <div class="front">
+                <video class="property-video" controls>
+                    <source src="property6.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3>Property Listing 1</h3>
+                <!-- Add other front face content as needed -->
+            </div>
+            <div class="back">
+                <p>Additional details or features go here.</p>
+                <!-- Add other back face content as needed -->
+            </div>
         </div>
-
-        <div class="property-listing">
-            <img class="property-image" src="https://via.placeholder.com/800x200" alt="Property 3">
-            <h3>Property Listing 3</h3>
-            <p>Address: 789 Pine St</p>
-            <p>Price: $700,000</p>
-            <p>Description: Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <p>Broker: Ram Kumar Sahu</p>
-        </div>
-
-        <div class="property-listing">
-            <img class="property-image" src="https://via.placeholder.com/800x200" alt="Property 4">
-            <h3>Property Listing 4</h3>
-            <p>Address: 101 Maple Ave</p>
-            <p>Price: $900,000</p>
-            <p>Description: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p>Broker: Ram Kumar Sahu</p>
-        </div>
-
-        <div class="property-listing">
-            <img class="property-image" src="https://via.placeholder.com/800x200" alt="Property 5">
-            <h3>Property Listing 5</h3>
-            <p>Address: 202 Elm St</p>
-            <p>Price: $1,200,000</p>
-            <p>Description: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            <p>Broker: Ram Kumar Sahu</p>
-        </div>
-
+        
         <!-- Add more property listings as needed -->
 
     </section>
