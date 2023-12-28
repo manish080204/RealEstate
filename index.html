@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RiddhiSiddhi Real Estate</title>
+    <title>RIDDHISIDDHI REAL ESTATE</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -27,12 +27,24 @@
     }
 }
 
-        header {
+        /* header {
             background-color: #1e4677;
             color: #fff;
             padding: 10px;
             text-align: center;
-        }
+        } */
+        header {
+    background-color: #363636; /* Dark Grey color for the header background */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    color: #ff1493; /* Dark Pink color for the text */
+}
+
+
 
         nav {
             display: flex;
@@ -82,6 +94,14 @@
             margin-top: 20px;
             text-align: center;
         }
+        .about-us {
+    background-color: #fff; /* Set background color for the About Us section */
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
         footer {
             background-color: #1e4677;
@@ -96,9 +116,9 @@
 </head>
 <body>
     <header>
-        <h1>RiddhiSiddhi Real Estate</h1>
+        <h1>RiDDHISiDDHI REAL ESTATE</h1>
         <nav>
-            <a href="#" onclick="openPopupHome()">Home</a>
+            <a href="#" onclick="openPopupHome(); location.reload();">Home</a>
             <a href="#" onclick="toggleHome()">Properties</a>
             <a href="#" onclick="toggleContactInfo()">Contact</a>
         </nav>
@@ -108,6 +128,14 @@
             <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">LinkedIn</a>
         </div>
     </header>
+    <!-- Add this div for the About Us section -->
+<div class="about-us">
+    <h2>About Us</h2>
+    <p>Welcome to RiDDHISiDDHI Real Estate, your trusted partner in finding the perfect home. With years of experience in the real estate industry, we are dedicated to helping you discover your dream home. Our team of professionals is committed to providing excellent service and guiding you through every step of the home-buying process.</p>
+    <p>At RiDDHISiDDHI Real Estate, we understand the importance of finding a place that feels like home. Whether you are looking for a cozy apartment, a spacious house, or a commercial property, we have a diverse range of listings to suit your needs.</p>
+    <p>Feel free to explore our property listings and contact us for any inquiries. We look forward to assisting you in making your real estate dreams a reality!</p>
+</div>
+
 
     <section>
         <h2>Welcome to RiddhiSiddhi Real Estate</h2>
