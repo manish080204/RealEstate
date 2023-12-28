@@ -7,6 +7,19 @@
     <title>RIDDHISIDDHI REAL ESTATE</title>
     <style>
         body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-image: url('https://i.pinimg.com/736x/9d/cc/e5/9dcce583bd481d58954fb7c6e41c7cfb.jpg'); /* Replace 'background-image.jpg' with the path to your image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+/* Rest of your existing styles */
+
+        body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
@@ -18,12 +31,67 @@
     animation: colorChange 10s infinite alternate;
 }
 
+header {
+            background: linear-gradient(45deg, #363636, #1e4677);
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 3rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            position: relative;
+            display: inline-block;
+            animation: bounce 2s infinite alternate;
+        }
+
+        .logo:before {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            color: #ff1493; /* Pink color */
+            animation: slide 2s infinite alternate;
+        }
+
+        @keyframes bounce {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes slide {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+    
+
 @keyframes colorChange {
     from {
-        background-color: #f7f7f7;
+        background: linear-gradient(45deg, #363636, #1e4677);
     }
     to {
-        background-color: #ffcc00;
+        background: linear-gradient(45deg, #1e4677, #363636);
+    }
+}
+
+@keyframes colorChange {
+    from {
+        background-color: #57abdb;
+    }
+    to {
+        background-color: #172439;
     }
 }
 
@@ -41,7 +109,7 @@
 }
 
 header h1 {
-    color: #ff1493; /* Dark Pink color for the text */
+    color: #ffeef7; /* Dark Pink color for the text */
 }
 
 
@@ -52,7 +120,7 @@ header h1 {
         }
 
         nav a {
-            color: #fff;
+            color: #912929;
             text-decoration: none;
             margin: 0 15px;
             cursor: pointer;
@@ -66,28 +134,72 @@ header h1 {
         section {
             padding: 20px;
         }
+        nav a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
 
-        .property-listing {
-            border: 1px solid #ccc;
-            padding: 20px;
-            margin-bottom: 30px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out;
+nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ff1493;
+    transition: width 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #d99dbd;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+footer:hover {
+    background-color: #ff1493;
+}
+
+.videos-container {
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px;
+            box-sizing: border-box;
         }
 
-        .property-listing:hover {
-            transform: scale(1.05);
+        .video-listing {
+            width: calc(50% - 20px); /* Adjust the width and margin as needed */
+            margin-bottom: 20px;
+            box-sizing: border-box;
         }
+.property-listing {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust the alpha value (0 to 1) for transparency */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
 
-        .property-image {
-            width: 100%;
-            max-height: 200px;
-            object-fit: cover;
-            border-radius: 10px;
-            margin-bottom: 10px;
-        }
+.property-listing:hover {
+    transform: scale(1.05);
+}
+
+.property-image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+        
 
         .contact-info {
             display: none;
@@ -103,7 +215,7 @@ header h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-        footer {
+footer {
             background-color: #1e4677;
             color: #fff;
             text-align: center;
@@ -112,37 +224,77 @@ header h1 {
             bottom: 0;
             width: 100%;
         }
+
+        .founder-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .founder-image {
+            width: 50px; /* Adjust the size as needed */
+            height: 50; /* Adjust the size as needed */
+            border-radius: 50%;
+            margin-right: 10px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>RiDDHISiDDHI REAL ESTATE</h1>
+        <h1 class="logo" data-text="RiDDHISiDDHI REAL ESTATE">RiDDHISiDDHI REAL ESTATE</h1>
+    </header>
+</body>
+<body>
+    <header>
+        
+        
         <nav>
-            <a href="#" onclick="openPopupHome(); location.reload();">Home</a>
+            <a href="#" onclick="refreshPage()">Home</a>
             <a href="#" onclick="toggleHome()">Properties</a>
             <a href="#" onclick="toggleContactInfo()">Contact</a>
+            <a href="#" onclick="toggleAboutUs()">About Us</a>
+
         </nav>
+        
         <div class="contact-info" id="contactInfo">
             <p>Mobile: +91 8851144571</p>
             <p>Email: manishsingh77912@gmail.com</p>
             <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">YouTube</a>
+            <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">Facebook</a>
+        
         </div>
     </header>
+    <hr>
     <!-- Add this div for the About Us section -->
-<div class="about-us">
+    <header>
+        <!-- Your existing header content -->
+        <button onclick="toggleAboutUs()">About Us</button>
+    </header>
+
+<div class="about-us" id="aboutUs">
     <h2>About Us</h2>
     <p>Welcome to RiDDHISiDDHI Real Estate, your trusted partner in finding the perfect home. With years of experience in the real estate industry, we are dedicated to helping you discover your dream home. Our team of professionals is committed to providing excellent service and guiding you through every step of the home-buying process.</p>
     <p>At RiDDHISiDDHI Real Estate, we understand the importance of finding a place that feels like home. Whether you are looking for a cozy apartment, a spacious house, or a commercial property, we have a diverse range of listings to suit your needs.</p>
     <p>Feel free to explore our property listings and contact us for any inquiries. We look forward to assisting you in making your real estate dreams a reality!</p>
 </div>
-
+<script>
+    function toggleAboutUs() {
+        var aboutUs = document.getElementById("aboutUs");
+        aboutUs.style.display = (aboutUs.style.display === "block") ? "none" : "block";
+    }
+    function refreshPage() {
+            window.location.reload();
+        }
+</script>
 
     <section>
-        <h2>Welcome to RiddhiSiddhi Real Estate</h2>
+        <h2>Welcome to RiDDHISiDDHI REAL ESTATE</h2>
         <p>Discover your dream home with us!</p>
         <div class="property-listing">
             <div class="front">
-                <video class="property-video" controls>
+                <video class="property-video" controls width="800" height="450">
                     <source src="property1.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -158,11 +310,11 @@ header h1 {
         
         <div class="property-listing">
             <div class="front">
-                <video class="property-video" controls>
+                <video class="property-video" controls width="800" height="450">
                     <source src="property2.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-                <h3>Property Listing 1</h3>
+                <h3>Property Listing 2</h3>
                 <!-- Add other front face content as needed -->
             </div>
             <div class="back">
@@ -173,11 +325,11 @@ header h1 {
         
         <div class="property-listing">
             <div class="front">
-                <video class="property-video" controls>
+                <video class="property-video" controls width="800" height="450">
                     <source src="property3.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-                <h3>Property Listing 1</h3>
+                <h3>Property Listing 3</h3>
                 <!-- Add other front face content as needed -->
             </div>
             <div class="back">
@@ -188,11 +340,11 @@ header h1 {
         
         <div class="property-listing">
             <div class="front">
-                <video class="property-video" controls>
+                <video class="property-video" controls width="800" height="450">
                     <source src="property4.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-                <h3>Property Listing 1</h3>
+                <h3>Property Listing 4</h3>
                 <!-- Add other front face content as needed -->
             </div>
             <div class="back">
@@ -203,11 +355,11 @@ header h1 {
         
         <div class="property-listing">
             <div class="front">
-                <video class="property-video" controls>
+                <video class="property-video" controls width="800" height="450">
                     <source src="property5.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-                <h3>Property Listing 1</h3>
+                <h3>Property Listing 5</h3>
                 <!-- Add other front face content as needed -->
             </div>
             <div class="back">
@@ -219,11 +371,11 @@ header h1 {
 
         <div class="property-listing">
             <div class="front">
-                <video class="property-video" controls>
+                <video class="property-video" controls width="800" height="450">
                     <source src="property6.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-                <h3>Property Listing 1</h3>
+                <h3>Property Listing 6</h3>
                 <!-- Add other front face content as needed -->
             </div>
             <div class="back">
@@ -241,6 +393,10 @@ header h1 {
 
     <footer>
         <p>&copy; 2023 RiddhiSiddhi Real Estate</p>
+        <div class="founder-info">
+            <img src="Screenshot 2023-12-29 022855.png" alt="Founder Image" class="founder-image">
+            <p>Owner&Founder: RAM KUMAR SAHU</p>
+        </div>
     </footer>
 
     <script>
